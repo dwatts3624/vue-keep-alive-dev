@@ -1,0 +1,40 @@
+{
+  "name": "vue-keep-alive-dev",
+  "version": "0.0.1",
+  "description": "A plugin to resolve HMR issues with the core keep-alive plugin",
+  "main": "dist/plugin.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f/vue-plugin-boilerplate.git"
+  },
+  "keywords": [
+    "vue",
+    "keep-alive"
+  ],
+  "author": "Danny Watts <dwatts3624@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/f/vue-plugin-boilerplate/issues"
+  },
+  "homepage": "https://github.com/f/vue-plugin-boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.10.4",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^5.2.0",
+    "vue": "^2.6.10",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.10"
+  }
+}
