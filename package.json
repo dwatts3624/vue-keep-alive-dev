@@ -1,5 +1,5 @@
 {
-  "name": "vue-keep-alive-dev",
+  "name": "@dwatts3624/vue-keep-alive-dev",
   "version": "0.0.1",
   "description": "A plugin to resolve HMR issues with the core keep-alive plugin",
   "main": "dist/plugin.js",
@@ -36,5 +36,6 @@
   },
   "peerDependencies": {
     "vue": "^2.6.10"
-  }
+  },
+  "dependencies": {}
 }
