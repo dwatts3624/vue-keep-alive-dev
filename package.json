@@ -1,6 +1,6 @@
 {
   "name": "vue-keep-alive-dev",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A plugin to resolve HMR issues with the core keep-alive plugin",
   "main": "dist/plugin.js",
   "files": [
