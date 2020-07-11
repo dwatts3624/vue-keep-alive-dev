@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/f/vue-plugin-boilerplate.git"
+    "url": "git+https://github.com/dwatts3624/vue-keep-alive-dev.git"
   },
   "keywords": [
     "vue",
@@ -21,9 +21,9 @@
   "author": "Danny Watts <dwatts3624@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/f/vue-plugin-boilerplate/issues"
+    "url": "https://github.com/dwatts3624/vue-keep-alive-dev/issues"
   },
-  "homepage": "https://github.com/f/vue-plugin-boilerplate#readme",
+  "homepage": "https://github.com/dwatts3624/vue-keep-alive-dev#readme",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-optional-chaining": "^7.10.4",
