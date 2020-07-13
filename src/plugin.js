@@ -1,7 +1,6 @@
 import Vue from 'vue';
 
 const oldKeepAlive = Vue.component('KeepAlive');
-delete oldKeepAlive.mounted;
 
 function isDef(v) {
   return v !== undefined && v !== null
@@ -90,9 +89,10 @@ const newKeepAlive = Vue.extend({
       }
 
       const { cache, keys } = this
-      const key = vnode.key
-        ? componentOptions.Ctor.cid + (componentOptions.tag ? `::${componentOptions.tag}` : "")
-        : vnode.key + componentOptions.Ctor.cid;
+
+      const key = vnode.key == null
+        ? componentOptions.Ctor.cid + (componentOptions.tag ? `::${componentOptions.tag}` : '')
+        : vnode.key + `::${componentOptions.Ctor.cid}`;
 
       if (cache[key]) {
         vnode.componentInstance = cache[key].componentInstance
@@ -115,9 +115,9 @@ const newKeepAlive = Vue.extend({
 });
 
 export default {
-  install(Vue, options) {
-    // ovveride original keep-alive if in development
-    if (process.env.NODE_ENV === options?.environment || 'development') {
+  install(Vue, options = {}) {
+    // override original keep-alive if in development
+    if (process.env.NODE_ENV === options.environment || 'development') {
       Vue.component('keep-alive', newKeepAlive)
     }
   }

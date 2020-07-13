@@ -1,8 +1,10 @@
 # VueKeepAliveDev
 This plugin resolves an issue where webpack's Hot Module Replacement (MHR) doesn't work for `keep-alive` components (e.g. `router-view`, etc).
 
+I was struggling to deal with the suggested workarounds that just disable `keep-alive` in development with exclude patterns or a dynamic component.  I quickly noticed that this creates a completely different hook flow where the created/activated/deactived/destroyed hooks would have be tuned based on local vs production and it was getting ugly!  Hoping this solution helps others avoid having to create confusing patterns between dev & production.
+
 ## Credit
-Full credit to nailfar & ericwu-wish in https://github.com/vuejs/vue-loader/issues/1332 for this *entire* solution.  I just packaged it up to make this easier as I was struggling to deal with the suggested workarounds that just disable `keep-alive` in development with exclude patterns or a dynamic component.  I quickly noticed that this creates a completely different hook flow where the created/activated/deactived/destroyed hooks would have be tuned based on local vs production and it was getting ugly!
+Full credit to nailfar & ericwu-wish in https://github.com/vuejs/vue-loader/issues/1332 for this *entire* solution.  I just packaged it up to make this easier.
 
 ## Installation
 
