@@ -117,7 +117,7 @@ const newKeepAlive = Vue.extend({
 export default {
   install(Vue, options = {}) {
     // override original keep-alive if in development
-    if (process.env.NODE_ENV === options.environment || 'development') {
+    if (process.env.NODE_ENV === (options.environment || 'development')) {
       Vue.component('keep-alive', newKeepAlive)
     }
   }
